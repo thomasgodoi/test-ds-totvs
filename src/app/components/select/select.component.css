@@ -1,0 +1,82 @@
+:host {
+  display: inline-flex;
+}
+
+.select-container {
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  border-color: var(--color);
+  background-color: var(--background);
+  padding: var(--padding-vertical) var(--padding-horizontal);
+  font-weight: var(--font-weight-normal);
+  border-width: var(--border-width-sm);
+  border-radius: var(--border-radius-md);
+  border-style: solid;
+  min-height: 2.75em;
+  color: var(--text-color-empty);
+  width: 250px;
+}
+
+/* chevron personalizado */
+.select-container {
+  appearance: none;
+  background-image: url("/assets/icons/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position: 98% 50%;
+  white-space: pre;
+  text-overflow: ellipsis;
+  text-indent: 1px;
+}
+
+.placeholder {
+  color: var(--text-color-empty);
+}
+
+.select-container option {
+  color: var(--text-color);
+}
+
+.select-container:valid {
+  color: var(--text-color);
+}
+
+.select-container:hover {
+  border-color: var(--color-hover);
+  background-color: var(--background-hover);
+  cursor: pointer;
+  color: var(--color-hover);
+}
+
+.select-container:focus {
+  border-color: var(--color-focused);
+  outline-color: var(--outline-color-focused);
+  color: var(--color-focused);
+  outline-width: var(--border-width-lg);
+  outline-style: solid;
+  outline-offset: 2px;
+}
+
+.select-container:disabled {
+  border-color: var(--color-disabled);
+  background-color: var(--background-disabled);
+  color: var(--color-disabled);
+  cursor: not-allowed;
+}
+
+.select-container:disabled option {
+  color: var(--text-color);
+}
+
+.select-container option:disabled {
+  color: var(--text-color-empty);
+}
+
+.error {
+  border-color: var(--color-error);
+  color: var(--color-error);
+  background-color: var(--background);
+}
+
+.select-container option:checked::before {
+  content: "v";
+}

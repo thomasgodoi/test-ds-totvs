@@ -1,0 +1,26 @@
+<div class="app-container">
+  <div id="switch">
+    <h3>Switch</h3>
+    <app-switch
+      [checked]="isSwitchActive"
+      (toggled)="handleDisableSwitchToggle($event)"
+      [disabled]="isSwitchDisabled"
+    />
+    <app-button variant="primary" (onClick)="toggleSwitchDisable()">
+      {{ isSwitchDisabled ? "Habilitar" : "Desabilitar" }} switch
+    </app-button>
+  </div>
+
+  <div id="select">
+    <h3>Select</h3>
+    <app-select [hasError]="hasError" [disabled]="isSelectDisabled" />
+    <div style="display: flex; gap: 20px">
+      <app-button variant="primary" (onClick)="toggleError()">
+        {{ hasError ? "Remover" : "Adicionar" }} erro
+      </app-button>
+      <app-button variant="primary" (onClick)="toggleSelectDisable()">
+        {{ isSelectDisabled ? "Habilitar" : "Desabilitar" }} select
+      </app-button>
+    </div>
+  </div>
+</div>

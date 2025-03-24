@@ -1,0 +1,10 @@
+<select [disabled]="disabled" class="select-container error" required [ngClass]="{'select-container': true, 'error': hasError}">
+  <option value="" disabled selected class="placeholder">
+    Choose an option
+  </option>
+  <option value="value-option-1">Option 1</option>
+  <option value="value-option-2">Option 2</option>
+  <option value="value-option-3" disabled>Option 3</option>
+  <option value="value-option-4">Option 4</option>
+  <option value="value-option-5">Option 5</option>
+</select>

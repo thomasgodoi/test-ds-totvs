@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+
+:root {
+  /* switch */
+  --color-action-default: #4545a1;
+  --color-action-hover: #1f1f7a;
+  --color-action-focus: #030330;
+  --color-action-disabled: #9da7a9;
+
+  --color-brand-01-light: #9898cd;
+  --color-brand-01-lightest: #ebebf5;
+  --color-brand-01-dark: #5b1c7d;
+
+  --color-neutral-light-00: #ffffff;
+  --color-neutral-light-20: #dadedf;
+  --color-neutral-dark-70: #4a5c60;
+  --border-width-md: 2px;
+
+  /* select */
+  --color-neutral-dark-90: #2e3a3d;
+  --font-family-text: Roboto;
+  --font-size-default: 1rem;
+  --color-neutral-light-30: #b6bdbf;
+  --color-neutral-light-05: #fbfbfb;
+  --color-feedback-negative-base: #be3e37;
+  --font-weight-normal: 400;
+  --border-width-sm: 1px;
+  --border-radius-md: 4px;
+  --color-focused: #260538;
+  --outline-color-focused: #260538;
+}
+
+app-switch {
+  --border-color: var(--color-neutral-dark-70);
+  --color-unchecked: var(--color-neutral-light-00);
+  --track-unchecked: var(--color-neutral-light-20);
+  --color-checked: var(--color-action-default);
+  --track-checked: var(--color-brand-01-light);
+  --outline-color-focused: var(--color-action-focus);
+  --color-checked-hover: var(--color-action-hover);
+  --color-unchecked-hover: var(--color-brand-01-lightest);
+  --color-checked-disabled: var(--color-action-disabled);
+  --color-unchecked-disabled: var(--color-neutral-light-20);
+  --border-width-lg: 4px;
+  --color-focused: #753399;
+  --outline-color-focused: #260538;
+}
+
+app-select {
+  --font-family: var(--font-family-text);
+  --font-size: var(--font-size-default);
+  --color: var(--color-neutral-dark-70);
+  --border-color: var(--color);
+  --text-color-empty: var(--color-neutral-light-30);
+  --background: var(--color-neutral-light-05);
+  --padding-horizontal: 0.5em;
+  --padding-vertical: 0.7em;
+  --text-color: var(--color-neutral-dark-90);
+  --color-hover: var(--color-brand-01-dark);
+  --background-hover: var(--color-brand-01-lightest);
+  --outline-color-focused: var(--color-action-default);
+  --color-disabled: var(--color-action-disabled);
+  --background-disabled: var(--color-neutral-light-20);
+  --color-error: var(--color-feedback-negative-base);
+  --color-focused: var(--color-action-default);
+  --outline-color-focused: var(--color-action-focus);
+}

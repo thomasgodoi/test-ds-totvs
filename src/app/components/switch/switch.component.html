@@ -1,0 +1,14 @@
+<label class="switch-container">
+  <input
+    type="checkbox"
+    [disabled]="disabled"
+    [checked]="checked"
+    [attr.aria-checked]="checked ? 'true' : 'false'"
+    (change)="toggleSwitch()"
+    tabindex="0"
+    aria-label="Switch"
+  />
+  <span class="switch-track">
+    <span class="switch-key"></span>
+  </span>
+</label>
