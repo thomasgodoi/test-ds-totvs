@@ -1,6 +1,7 @@
 # Totvs
 
-![image](https://github.com/user-attachments/assets/2130646b-b487-4bef-9966-7191216d4dbf)
+![image](https://github.com/user-attachments/assets/15ece922-d557-4f28-8a2b-dde014543889)
+
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.2.4.
 
